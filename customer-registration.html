@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- EDIT per project: title + description -->
-  <title>Agarwal Lifestyle · Virar West | Agarwal Group</title>
-  <meta name="description" content="Agarwal Lifestyle at Virar West — 1, 2 & 3 BHK residences by Agarwal Group. Price starting ₹35.49 L*." />
+  <title>Customer Registration · Agarwal Group</title>
+  <meta name="description" content="Register as a customer with Agarwal Group — share your details, preferences and budget, and our team will guide you to your perfect home." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -2952,7 +2952,7 @@
 .pp-hero{position:relative;max-width:var(--maxw);margin:14px auto 0;padding:0 5vw}
 .pp-hero-inner{position:relative;border-radius:22px;overflow:hidden;min-height:clamp(340px,52vh,560px);display:flex;align-items:flex-end;
   /* EDIT: swap the gradient below for  url('paramount-hero.jpg') center/cover */
-  background:url('agarwal-lifestyle-hero.jpg') center/cover;box-shadow:var(--shadow)}
+  background:url('gallery-exterior.jpg') center/cover;box-shadow:var(--shadow)}
 .pp-hero-inner::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(15,16,12,.82),rgba(15,16,12,.25) 55%,rgba(15,16,12,.12))}
 .pp-hero-body{position:relative;z-index:2;padding:clamp(26px,5vw,52px);color:#fff;width:100%}
 .pp-status{display:inline-block;font-size:.7rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--pine);
@@ -3062,6 +3062,45 @@
 .pp-hero .pp-crumb{max-width:none;margin:0 0 16px;padding:0;color:rgba(255,255,255,.78)}
 .pp-hero .pp-crumb a{color:rgba(255,255,255,.78)}
 .pp-hero .pp-crumb a:hover{color:var(--brass-bright)}
+
+/* === about page === */
+.ab-vm{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}
+@media(max-width:820px){.ab-vm{grid-template-columns:1fr}}
+.ab-card{background:var(--paper);border:1px solid var(--line-light);border-radius:18px;padding:clamp(24px,3.4vw,38px);box-shadow:var(--shadow)}
+.ab-ic{width:48px;height:48px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(220,188,124,.3),rgba(148,118,47,.16));color:var(--brass-deep);font-family:'Fraunces',serif;font-size:1.3rem}
+.ab-card h3{font-family:'Fraunces',serif;font-weight:400;font-size:1.45rem;margin:16px 0 10px;color:var(--ink)}
+.ab-card p{font-size:1rem;line-height:1.75;color:var(--ink-soft);margin:0}
+.ab-values{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+@media(max-width:900px){.ab-values{grid-template-columns:repeat(2,1fr)}}
+.ab-val{background:var(--ivory);border:1px solid var(--line-light);border-radius:14px;padding:18px}
+.ab-val b{display:block;font-family:'Fraunces',serif;font-weight:500;font-size:1.05rem;color:var(--ink);margin-bottom:6px}
+.ab-val span{font-size:.86rem;line-height:1.55;color:var(--taupe)}
+.ab-dirs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+@media(max-width:940px){.ab-dirs{grid-template-columns:1fr}}
+.ab-dir{background:var(--paper);border:1px solid var(--line-light);border-radius:18px;padding:clamp(22px,3vw,32px);box-shadow:var(--shadow)}
+.ab-ava{width:86px;height:86px;border-radius:50%;display:grid;place-items:center;font-family:'Fraunces',serif;font-size:1.7rem;color:var(--pine);background:linear-gradient(135deg,var(--brass-bright),var(--brass));margin-bottom:18px}
+.ab-dir h3{font-family:'Fraunces',serif;font-weight:400;font-size:1.3rem;color:var(--ink);margin:0}
+.ab-note{font-family:'Inter',sans-serif;font-size:.66rem;letter-spacing:.06em;color:#b4552d;text-transform:uppercase;vertical-align:middle}
+.ab-role{font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brass-deep);margin:8px 0 12px}
+.ab-dir p{font-size:.95rem;line-height:1.7;color:var(--ink-soft);margin:0}
+
+/* === registration form === */
+.reg-form{max-width:100%}
+.rf-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:720px){.rf-grid{grid-template-columns:1fr}}
+.rf-sub{font-family:'Fraunces',serif;font-weight:500;font-size:1.12rem;color:var(--ink);margin:26px 0 4px;padding-top:18px;border-top:1px solid var(--line-light)}
+.field label i,.rf-sub i,.rf-agree i{color:#b4552d;font-style:normal}
+.rf-chips{display:flex;flex-wrap:wrap;gap:10px}
+.rf-chips label{cursor:pointer}
+.rf-chips input{position:absolute;opacity:0;pointer-events:none}
+.rf-chips span{display:inline-block;padding:10px 18px;border:1px solid var(--line);border-radius:50px;font-size:.88rem;color:var(--ink-soft);transition:all .25s var(--ease);background:var(--paper)}
+.rf-chips input:checked + span{background:linear-gradient(135deg,var(--brass-bright),var(--brass));color:var(--pine);border-color:transparent;font-weight:600}
+.rf-chips span:hover{border-color:var(--brass)}
+.rf-add,.rf-otp{align-self:flex-start;justify-self:start;background:none;border:1.5px dashed var(--brass);color:var(--brass-deep);padding:9px 18px;border-radius:50px;font-size:.8rem;font-weight:600;cursor:pointer;margin:-4px 0 4px;letter-spacing:.04em}
+.rf-otp{border-style:solid}
+.rf-note{font-size:.85rem;color:var(--brass-deep);background:var(--ivory);border:1px solid var(--line-light);border-radius:10px;padding:12px 16px}
+.rf-agree{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--ink-soft);margin-top:22px}
+.rf-agree input{width:18px;height:18px;accent-color:var(--brass-deep)}
 </style>
 </head>
 <body id="top">
@@ -3193,166 +3232,195 @@
   <section class="pp-hero reveal">
     <div class="pp-hero-inner"><div class="pp-hero-art"><svg viewBox="0 0 1200 300" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="150" width="120" height="150" fill="#0d0e0a" opacity="0.5"/><rect x="110" y="90" width="90" height="210" fill="#0d0e0a" opacity="0.6"/><rect x="210" y="130" width="140" height="170" fill="#0d0e0a" opacity="0.45"/><rect x="330" y="50" width="80" height="250" fill="#0d0e0a" opacity="0.65"/><rect x="430" y="100" width="150" height="200" fill="#0d0e0a" opacity="0.5"/><rect x="600" y="60" width="110" height="240" fill="#0d0e0a" opacity="0.6"/><rect x="720" y="120" width="160" height="180" fill="#0d0e0a" opacity="0.45"/><rect x="880" y="40" width="90" height="260" fill="#0d0e0a" opacity="0.65"/><rect x="980" y="110" width="140" height="190" fill="#0d0e0a" opacity="0.5"/><rect x="1110" y="80" width="120" height="220" fill="#0d0e0a" opacity="0.55"/><rect x="150" y="98" width="6" height="194" fill="#DCBC7C" opacity=".18"/><rect x="370" y="58" width="6" height="234" fill="#DCBC7C" opacity=".18"/><rect x="640" y="68" width="6" height="224" fill="#DCBC7C" opacity=".18"/><rect x="915" y="48" width="6" height="244" fill="#DCBC7C" opacity=".18"/><rect x="1040" y="118" width="6" height="174" fill="#DCBC7C" opacity=".18"/></svg></div>
       <div class="pp-hero-body">
-        <div class="pp-crumb"><a href="index.html#top">Home</a> &nbsp;/&nbsp; <a href="index.html#projects">Ongoing Projects</a> &nbsp;/&nbsp; Agarwal Lifestyle</div>
-        <span class="pp-status">Ready to Move</span>
-        <h1>Agarwal Lifestyle</h1>
-        <div class="pp-hero-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Virar West, Vasai–Virar &amp; Mumbai</div>
+        <div class="pp-crumb"><a href="index.html#top">Home</a> &nbsp;/&nbsp; Customer Registration</div>
+        <span class="pp-status">New Booking</span>
+        <h1>Customer Registration</h1>
+        <div class="pp-hero-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Register your interest — our team will call you back</div>
         <div class="pp-hero-cta">
-          <a class="primary" href="#enquire">Enquire Now →</a>
-          <a class="ghost" href="#config">View Pricing</a>
+          <a class="primary" href="#enquire">Fill the Form ↓</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============ QUICK FACTS (EDIT values) ============ -->
-  <div class="pp-facts">
-    <div class="pp-facts-grid reveal">
-      <div class="pp-fact"><div class="k">Configuration</div><div class="v">1, 2 & 3 BHK</div></div>
-      <div class="pp-fact"><div class="k">Starting Price</div><div class="v">₹35.49 L*</div></div>
-      <div class="pp-fact"><div class="k">Carpet Area</div><div class="v">395 – 720 sq.ft</div></div>
-      <div class="pp-fact"><div class="k">Possession</div><div class="v">Ready to Move</div></div>
-      <div class="pp-fact"><div class="k">RERA</div><div class="v">P99000XXXXXX</div></div>
-    </div>
-  </div>
+  <!-- ============ CUSTOMER REGISTRATION FORM ============ -->
+  <section class="pp-sec reveal" id="enquire" style="max-width:980px">
+    <span class="pp-eyebrow">Customer Details</span>
+    <h2 class="pp-h2">Tell us about yourself.</h2>
+    <p class="pp-lede">Fields marked <span style="color:#b4552d">*</span> are required. Our sales team will verify your details and reach out within 24 hours.</p>
 
-  <!-- ============ OVERVIEW + HIGHLIGHTS (EDIT copy) ============ -->
-  <section class="pp-sec reveal">
-    <div class="pp-split">
-      <div>
-        <span class="pp-eyebrow">Overview</span>
-        <h2 class="pp-h2">A landmark address where everyday life feels elevated.</h2>
-        <p class="pp-lede">Agarwal Lifestyle brings thoughtfully designed 1, 2 & 3 BHK homes to the heart of Virar West. Every residence is planned for abundant natural light, cross-ventilation and efficient carpet areas — wrapped in a gated community with resort-grade amenities and seamless connectivity to Mumbai. <!-- EDIT: replace with the real project overview --></p>
-        <p class="pp-lede">Backed by four decades of Agarwal Group craftsmanship, Lifestyle is built to hold its value and grow with your family for generations.</p>
+    <form class="pp-form reg-form" onsubmit="return regSubmit(this);" style="margin-top:30px">
+
+      <div class="rf-grid">
+        <div class="field"><label>Applicant 1 Name <i>*</i></label><input type="text" name="applicant1" required placeholder="Full name" /></div>
+        <div class="field" id="app2wrap" style="display:none"><label>Applicant 2 Name</label><input type="text" name="applicant2" placeholder="Full name" /></div>
       </div>
-      <div>
-        <span class="pp-eyebrow">Why Lifestyle</span>
-        <ul class="pp-usp">
-          <li>Prime Virar West location with quick access to the Western Line &amp; highways</li>
-          <li>Vaastu-compliant 1, 2 & 3 BHK layouts with efficient carpet areas</li>
-          <li>Gated community with 24×7 security &amp; CCTV surveillance</li>
-          <li>Resort-style amenities across landscaped podium &amp; rooftop decks</li>
-          <li>RERA-registered · clear title · bank-approved for home loans</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+      <button type="button" class="rf-add" id="addApplicant">+ Add second applicant</button>
 
-  <!-- ============ AMENITIES (EDIT list) ============ -->
-  <section class="pp-sec reveal" style="padding-top:0">
-    <span class="pp-eyebrow">Lifestyle</span>
-    <h2 class="pp-h2">Amenities designed for every generation.</h2>
-    <div class="pp-amen">
-      <div class="a"><div class="ic">◆</div><h4>Grand Entrance Lobby</h4></div>
-      <div class="a"><div class="ic">◇</div><h4>Swimming Pool &amp; Deck</h4></div>
-      <div class="a"><div class="ic">✦</div><h4>Fully-Equipped Gymnasium</h4></div>
-      <div class="a"><div class="ic">❖</div><h4>Landscaped Podium Garden</h4></div>
-      <div class="a"><div class="ic">◈</div><h4>Children's Play Area</h4></div>
-      <div class="a"><div class="ic">✧</div><h4>Multipurpose Community Hall</h4></div>
-      <div class="a"><div class="ic">◇</div><h4>Indoor Games &amp; Library</h4></div>
-      <div class="a"><div class="ic">◆</div><h4>Rooftop Sky Lounge</h4></div>
-    </div>
-  </section>
-
-  <!-- ============ CONFIGURATION & PRICING (EDIT rows) ============ -->
-  <section class="pp-sec reveal" id="config" style="padding-top:0">
-    <span class="pp-eyebrow">Plans &amp; Pricing</span>
-    <h2 class="pp-h2">Configurations &amp; indicative pricing.</h2>
-    <table class="pp-table">
-      <thead><tr><th>Type</th><th>Carpet Area</th><th>Price</th><th>Status</th></tr></thead>
-      <tbody>
-        <tr><td>1 BHK</td><td>395 sq.ft</td><td class="price">₹35.49 L*</td><td>Available</td></tr>
-        <tr><td>2 BHK</td><td>560 sq.ft</td><td class="price">₹52.90 L*</td><td>Available</td></tr>
-        <tr><td>3 BHK</td><td>720 sq.ft</td><td class="price">₹68.50 L*</td><td>Few Left</td></tr>
-      </tbody>
-    </table>
-    <p class="pp-lede" style="font-size:.8rem">*Prices are indicative, exclusive of taxes &amp; other charges, and subject to change. Contact our sales team for the current price list.</p>
-  </section>
-
-  <!-- ============ SPECIFICATIONS (EDIT rows) ============ -->
-  <section class="pp-sec reveal" style="padding-top:0">
-    <span class="pp-eyebrow">Specifications</span>
-    <h2 class="pp-h2">Built with quality that lasts.</h2>
-    <div class="pp-specs">
-      <div class="row"><span>Structure</span><span>Earthquake-resistant RCC framed</span></div>
-      <div class="row"><span>Flooring</span><span>Vitrified tiles in all rooms</span></div>
-      <div class="row"><span>Kitchen</span><span>Granite platform · SS sink</span></div>
-      <div class="row"><span>Bathrooms</span><span>Designer tiles · branded CP fittings</span></div>
-      <div class="row"><span>Doors</span><span>Laminated flush doors</span></div>
-      <div class="row"><span>Windows</span><span>Powder-coated aluminium sliding</span></div>
-      <div class="row"><span>Electrical</span><span>Concealed copper wiring · modular</span></div>
-      <div class="row"><span>Lifts</span><span>Branded automatic elevators</span></div>
-    </div>
-  </section>
-
-  <!-- ============ LOCATION & CONNECTIVITY (EDIT) ============ -->
-  <section class="pp-sec reveal" style="padding-top:0">
-    <span class="pp-eyebrow">Location</span>
-    <h2 class="pp-h2">Connected to everything that matters.</h2>
-    <div class="pp-loc-grid">
-      <ul class="pp-conn">
-        <li><span>Railway Station</span><b>5 mins</b></li>
-        <li><span>Western Express Highway</span><b>12 mins</b></li>
-        <li><span>Schools &amp; Colleges</span><b>5–10 mins</b></li>
-        <li><span>Hospitals</span><b>8 mins</b></li>
-        <li><span>Shopping &amp; Malls</span><b>10 mins</b></li>
-        <li><span>Upcoming Metro</span><b>Nearby</b></li>
-      </ul>
-      <!-- EDIT: paste a Google Maps <iframe> here to replace this placeholder -->
-      <!-- EDIT: replace this illustration with your Google Maps <iframe> -->
-      <div class="pp-map"><svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="600" height="400" fill="#F6F4EE"/><rect x="0" y="150" width="600" height="70" fill="#bcd3dc" opacity=".5"/><g stroke="#ddd3bf" stroke-width="10"><line x1="0" y1="90" x2="600" y2="90"/><line x1="0" y1="300" x2="600" y2="300"/><line x1="130" y1="0" x2="130" y2="400"/><line x1="430" y1="0" x2="430" y2="400"/></g><g stroke="#e7ddca" stroke-width="4"><line x1="0" y1="190" x2="600" y2="190"/><line x1="280" y1="0" x2="280" y2="400"/></g><rect x="150" y="110" width="120" height="70" fill="#586b4d" opacity=".45"/><rect x="450" y="220" width="110" height="90" fill="#586b4d" opacity=".4"/><circle cx="300" cy="200" r="46" fill="#B68E3F" opacity=".18"/><path d="M300 158 c-24 0 -40 18 -40 40 c0 30 40 64 40 64 c0 0 40 -34 40 -64 c0 -22 -16 -40 -40 -40Z" fill="#94762F"/><circle cx="300" cy="198" r="15" fill="#F6F4EE"/></svg><span class="map-note">Indicative location · swap for live map</span></div>
-    </div>
-  </section>
-
-  <!-- ============ GALLERY (EDIT: swap divs for <img>) ============ -->
-  <section class="pp-sec reveal" style="padding-top:0">
-    <span class="pp-eyebrow">Gallery</span>
-    <h2 class="pp-h2">A closer look at Lifestyle.</h2>
-    <div class="pp-gallery">
-      <div class="g"><img src="gallery-exterior.jpg" alt="Exterior view" loading="lazy" /></div>
-      <div class="g"><img src="gallery-lobby.jpg" alt="Lobby" loading="lazy" /></div>
-      <div class="g"><img src="gallery-living.jpg" alt="Living room" loading="lazy" /></div>
-      <div class="g"><img src="gallery-bedroom.jpg" alt="Bedroom" loading="lazy" /></div>
-      <div class="g"><img src="gallery-pool.jpg" alt="Amenities" loading="lazy" /></div>
-      <div class="g"><img src="gallery-aerial.jpg" alt="Aerial view" loading="lazy" /></div>
-    </div>
-
-  </section>
-
-  <!-- ============ RERA (EDIT number) ============ -->
-  <section class="pp-sec reveal" style="padding-top:0">
-    <div class="pp-rera">
-      <h3>RERA Details</h3>
-      <div class="no">MahaRERA Registration No.: P99000XXXXXX</div>
-      <p>Agarwal Lifestyle is registered under the Maharashtra Real Estate (Regulation &amp; Development) Act, 2016. Details available on the MahaRERA website at maharera.mahaonline.gov.in. This webpage is for informational purposes and does not constitute an offer or contract. Images are indicative. <!-- EDIT: replace RERA number & any statutory text --></p>
-    </div>
-  </section>
-
-  <!-- ============ ENQUIRY FORM (shared pattern) ============ -->
-  <section class="pp-enq" id="enquire">
-    <div class="pp-enq-wrap reveal">
-      <div class="pp-enq-copy">
-        <h2>Interested in Agarwal Lifestyle?</h2>
-        <p>Share your details and our team will reach out with the latest price list, floor plans and site-visit slots.</p>
-        <a class="tel" href="tel:+918408008001">+91 84080 08001</a>
-        <a class="tel" href="mailto:sales@agarwalrealties.com">sales@agarwalrealties.com</a>
-      </div>
-      <form class="pp-form" onsubmit="return false;">
-        <div class="field"><label>Full Name</label><input type="text" placeholder="Your name" /></div>
-        <div class="field"><label>Mobile Number</label>
-          <div class="phone-wrap"><span class="phone-cc">+91</span><input type="tel" class="phone-input" inputmode="numeric" maxlength="10" placeholder="00000 00000" aria-label="10 digit mobile number" /></div>
+      <div class="rf-grid">
+        <div class="field"><label>Email <i>*</i></label><input type="email" name="email" required placeholder="you@email.com" /></div>
+        <div class="field"><label>Project Name <i>*</i></label>
+          <select name="project" required>
+            <option value="">Please select project</option>
+            <option>Agarwal Paramount — Virar West</option>
+            <option>Agarwal Exotica — Vasai East</option>
+            <option>Agarwal Solitaire — Virar West</option>
+            <option>Agarwal Lifestyle — Virar West</option>
+          </select>
         </div>
-        <div class="field"><label>Email</label><input type="email" placeholder="you@email.com" /></div>
-        <div class="field"><label>Configuration</label>
-          <select><option>1 BHK</option><option>2 BHK</option><option>3 BHK</option></select>
+      </div>
+
+      <div class="rf-grid">
+        <div class="field"><label>Mobile No <i>*</i></label>
+          <div class="phone-wrap"><span class="phone-cc">+91</span><input type="tel" class="phone-input" name="mobile" required inputmode="numeric" maxlength="10" placeholder="00000 00000" /></div>
         </div>
-        <div class="field"><label>Message</label><textarea rows="3" placeholder="I'd like to know more about Lifestyle..."></textarea></div>
-        <button type="submit">Request a Callback</button>
-      </form>
-    </div>
+        <div class="field"><label>Alternate Mobile</label>
+          <div class="phone-wrap"><span class="phone-cc">+91</span><input type="tel" class="phone-input" name="mobile2" inputmode="numeric" maxlength="10" placeholder="00000 00000" /></div>
+        </div>
+      </div>
+      <button type="button" class="rf-otp" id="sendOtp">Send OTP</button>
+      <div class="rf-note" id="otpNote" style="display:none">OTP verification will be activated once the form is connected to your CRM / server.</div>
+
+      <div class="rf-grid">
+        <div class="field"><label>Nationality <i>*</i></label>
+          <select name="nationality" required>
+            <option value="">--None--</option><option>Indian</option><option>NRI</option><option>Other</option>
+          </select>
+        </div>
+        <div class="field"><label>Search Pincode <i>*</i></label><input type="text" name="searchpin" required inputmode="numeric" maxlength="6" placeholder="e.g. 401303" /></div>
+      </div>
+
+      <h4 class="rf-sub">Residential Address <i>*</i></h4>
+      <div class="rf-grid">
+        <div class="field"><label>House No.</label><input type="text" name="houseno" /></div>
+        <div class="field"><label>Building / Society Name <i>*</i></label><input type="text" name="building" required /></div>
+      </div>
+      <div class="rf-grid">
+        <div class="field"><label>Street 2</label><input type="text" name="street2" /></div>
+        <div class="field"><label>Street 3</label><input type="text" name="street3" /></div>
+      </div>
+      <div class="rf-grid">
+        <div class="field"><label>Locality</label><input type="text" name="locality" /></div>
+        <div class="field"><label>City <i>*</i></label><input type="text" name="city" required /></div>
+      </div>
+      <div class="rf-grid">
+        <div class="field"><label>Pincode <i>*</i></label><input type="text" name="pincode" required inputmode="numeric" maxlength="6" /></div>
+        <div class="field"><label>State <i>*</i></label><input type="text" name="state" required /></div>
+      </div>
+      <div class="rf-grid">
+        <div class="field"><label>Country <i>*</i></label><input type="text" name="country" required value="India" /></div>
+      </div>
+
+      <h4 class="rf-sub">Occupation <i>*</i></h4>
+      <div class="rf-chips" data-required="1">
+        <label><input type="radio" name="occupation" value="Business" required /><span>Business</span></label>
+        <label><input type="radio" name="occupation" value="Service" /><span>Service</span></label>
+        <label><input type="radio" name="occupation" value="Professional" /><span>Professional</span></label>
+        <label><input type="radio" name="occupation" value="Others" /><span>Others</span></label>
+      </div>
+      <div class="rf-grid">
+        <div class="field"><label>Company you are Working for</label><input type="text" name="company" /></div>
+        <div class="field"><label>Designation</label><input type="text" name="designation" /></div>
+      </div>
+      <div class="rf-grid">
+        <div class="field"><label>Company Address</label><input type="text" name="companyaddr" /></div>
+        <div class="field"><label>City</label><input type="text" name="companycity" /></div>
+      </div>
+      <div class="rf-grid">
+        <div class="field"><label>Pin Code</label><input type="text" name="companypin" inputmode="numeric" maxlength="6" /></div>
+      </div>
+
+      <h4 class="rf-sub">Telephone No</h4>
+      <div class="rf-grid">
+        <div class="field"><label>Residence</label>
+          <div class="phone-wrap"><span class="phone-cc">+91</span><input type="tel" class="phone-input" name="telres" inputmode="numeric" maxlength="10" /></div>
+        </div>
+        <div class="field"><label>Office</label>
+          <div class="phone-wrap"><span class="phone-cc">+91</span><input type="tel" class="phone-input" name="teloff" inputmode="numeric" maxlength="10" /></div>
+        </div>
+      </div>
+
+      <h4 class="rf-sub">Contact Person (same as Applicant 1?) <i>*</i></h4>
+      <div class="rf-chips">
+        <label><input type="radio" name="samecontact" value="Yes" checked /><span>Yes</span></label>
+        <label><input type="radio" name="samecontact" value="No" /><span>No</span></label>
+      </div>
+      <div id="contactBlock" style="display:none">
+        <div class="rf-grid">
+          <div class="field"><label>Name <i>*</i></label><input type="text" name="contactname" /></div>
+          <div class="field"><label>Relation / Designation <i>*</i></label><input type="text" name="contactrel" /></div>
+        </div>
+        <div class="rf-grid">
+          <div class="field"><label>Telephone</label>
+            <div class="phone-wrap"><span class="phone-cc">+91</span><input type="tel" class="phone-input" name="contacttel" inputmode="numeric" maxlength="10" /></div>
+          </div>
+          <div class="field"><label>Mobile <i>*</i></label>
+            <div class="phone-wrap"><span class="phone-cc">+91</span><input type="tel" class="phone-input" name="contactmob" inputmode="numeric" maxlength="10" /></div>
+          </div>
+        </div>
+        <div class="rf-grid">
+          <div class="field"><label>Email</label><input type="email" name="contactemail" /></div>
+        </div>
+      </div>
+
+      <h4 class="rf-sub">Customer Category <i>*</i></h4>
+      <div class="rf-chips">
+        <label><input type="radio" name="category" value="End User" required /><span>End User</span></label>
+        <label><input type="radio" name="category" value="Investor" /><span>Investor</span></label>
+        <label><input type="radio" name="category" value="Second Home" /><span>Second Home</span></label>
+      </div>
+
+      <h4 class="rf-sub">How did you hear about us <i>*</i></h4>
+      <div class="rf-chips">
+        <label><input type="radio" name="source" value="Hoardings" required /><span>Hoardings</span></label>
+        <label><input type="radio" name="source" value="Friends & Relatives" /><span>Friends &amp; Relatives</span></label>
+        <label><input type="radio" name="source" value="Property Consultant" /><span>Property Consultant</span></label>
+        <label><input type="radio" name="source" value="Print Media" /><span>Print Media</span></label>
+        <label><input type="radio" name="source" value="Digital" /><span>Digital</span></label>
+      </div>
+
+      <h4 class="rf-sub">Budget <i>*</i></h4>
+      <div class="rf-chips">
+        <label><input type="radio" name="budget" value="Below ₹30 L" required /><span>Below ₹30 L</span></label>
+        <label><input type="radio" name="budget" value="₹30–40 L" /><span>₹30 – 40 L</span></label>
+        <label><input type="radio" name="budget" value="₹40–55 L" /><span>₹40 – 55 L</span></label>
+        <label><input type="radio" name="budget" value="₹55–70 L" /><span>₹55 – 70 L</span></label>
+        <label><input type="radio" name="budget" value="₹70 L & Above" /><span>₹70 L &amp; Above</span></label>
+      </div>
+
+      <h4 class="rf-sub">Requirements <i>*</i></h4>
+      <div class="rf-chips">
+        <label><input type="radio" name="config" value="1 BHK" required /><span>1 BHK</span></label>
+        <label><input type="radio" name="config" value="2 BHK" /><span>2 BHK</span></label>
+        <label><input type="radio" name="config" value="3 BHK" /><span>3 BHK</span></label>
+      </div>
+
+      <h4 class="rf-sub">Carpet Area (in sq. ft.) <i>*</i></h4>
+      <div class="rf-chips">
+        <label><input type="radio" name="carpet" value="Below 400" required /><span>Below 400</span></label>
+        <label><input type="radio" name="carpet" value="401–550" /><span>401 – 550</span></label>
+        <label><input type="radio" name="carpet" value="551–720" /><span>551 – 720</span></label>
+        <label><input type="radio" name="carpet" value="721 & Above" /><span>721 &amp; Above</span></label>
+      </div>
+
+      <h4 class="rf-sub">Source of Booking <i>*</i></h4>
+      <div class="rf-chips">
+        <label><input type="radio" name="booking" value="Direct" required /><span>Direct</span></label>
+        <label><input type="radio" name="booking" value="Partner" /><span>Partner</span></label>
+        <label><input type="radio" name="booking" value="Existing Customer" /><span>Existing Customer</span></label>
+        <label><input type="radio" name="booking" value="Customer Referral" /><span>Customer Referral</span></label>
+        <label><input type="radio" name="booking" value="Employee Referral" /><span>Employee Referral</span></label>
+        <label><input type="radio" name="booking" value="Employee" /><span>Employee</span></label>
+      </div>
+
+      <label class="rf-agree"><input type="checkbox" name="agree" required /> I agree to the <a href="#" style="color:var(--brass-deep);text-decoration:underline">Terms and Conditions</a> <i>*</i></label>
+
+      <button type="submit">Submit Registration</button>
+      <div class="rf-note" id="regDone" style="display:none">✓ Thank you! Your registration has been captured. Our team will contact you shortly.<br><small>(Note for site owner: connect this form to your CRM / email backend to receive submissions.)</small></div>
+    </form>
   </section>
 
-  <!-- ============ FOOTER (shared with homepage) ============ -->
   <footer>
     <div class="wrap">
       <div class="foot-top">
@@ -3374,7 +3442,8 @@
         </div>
         <div class="foot-col">
           <h5>Company</h5>
-          <a href="customer-registration.html">Customer Registration</a><a href="index.html#story">About Us</a><a href="index.html#projects">Ongoing Projects</a><a href="index.html#projects">Completed Projects</a><a href="blog.html">Blogs</a><a href="channel-partner.html">Channel Partner</a><a href="#enquire">Contact Us</a><a href="#enquire">Careers</a><a href="index.html#story">Our Vision</a><a href="index.html#projects">RERA Details</a>
+          <a href="customer-registration.html">Customer Registration</a>
+          <a href="index.html#story">About Us</a><a href="index.html#projects">Ongoing Projects</a><a href="index.html#projects">Completed Projects</a><a href="blog.html">Blogs</a><a href="channel-partner.html">Channel Partner</a><a href="#enquire">Contact Us</a><a href="#enquire">Careers</a><a href="index.html#story">Our Vision</a><a href="index.html#projects">RERA Details</a>
         </div>
         <div class="foot-col">
           <h5>Legal</h5>
@@ -3415,6 +3484,27 @@
     }
     const io = new IntersectionObserver((es) => { es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: .12, rootMargin: '0px 0px -6% 0px' });
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    
+    document.getElementById('addApplicant').addEventListener('click', function(){
+      document.getElementById('app2wrap').style.display='block'; this.style.display='none';
+    });
+    document.getElementById('sendOtp').addEventListener('click', function(){
+      document.getElementById('otpNote').style.display='block';
+    });
+    document.querySelectorAll('input[name="samecontact"]').forEach(function(r){
+      r.addEventListener('change', function(){
+        var show = this.value==='No';
+        document.getElementById('contactBlock').style.display = show?'block':'none';
+        ['contactname','contactrel','contactmob'].forEach(function(n){
+          var el=document.querySelector('[name="'+n+'"]'); if(el) el.required=show;
+        });
+      });
+    });
+    function regSubmit(f){
+      document.getElementById('regDone').style.display='block';
+      document.getElementById('regDone').scrollIntoView({behavior:'smooth',block:'center'});
+      return false;
+    }
     (function () { document.querySelectorAll(".phone-input").forEach(function (el) { el.addEventListener("input", function () { var v = this.value.replace(/\D/g, "").slice(0, 10); if (this.value !== v) this.value = v; }); }); })();
   </script>
 </body>
